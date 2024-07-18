@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="p-4 dark:bg-zinc-900 dark:text-white dark:selection:bg-white/30 dark:selection:text-white">
         {children}
         {allCookies.map((cookie) => (
-          <div key={cookie.name}>
+          <div key={cookie.name} className="mb-2">
             <p>Cookie name: {cookie.name}</p>
             <p>Cookie value: {cookie.value}</p>
           </div>
